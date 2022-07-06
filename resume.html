@@ -1,0 +1,417 @@
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resume.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+
+    <!--CSS files-->
+
+    <link rel="stylesheet" href="">
+
+
+    <!--    Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Ubuntu:400,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <style type="text/css">
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(255, 232, 103);
+        }
+        
+        .full {
+            width: 100%;
+            max-width: 100%;
+            min-height: 100px;
+            margin: 0px;
+            display: grid;
+            grid-template-columns: 2fr 4fr;
+        }
+        
+        .left {
+            position: initial;
+            background-color: rgb(12, 236, 221);
+            padding: 20px;
+        }
+        
+        .right {
+            position: initial;
+            background-color: rgb(120, 104, 230);
+            padding: 20px;
+        }
+        
+        .image,
+        .Contact,
+        .Skills,
+        .Language,
+        .Hobbies,
+        .title,
+        .Summary,
+        .Experience,
+        .Education,
+        .project {
+            margin-bottom: 30px;
+        }
+        
+        .image {
+            text-align: center;
+        }
+        
+        .h2 {
+            background-color: rgb(4, 96, 150);
+        }
+        
+        .border {
+            border: dotted 5px;
+            border-bottom: none;
+            width: 8%;
+            margin: 50px auto;
+            color: darkslategrey;
+        }
+        
+        .line {
+            border: double 3px;
+            border-bottom: none;
+            height: 1px;
+            margin: 50px auto;
+            color: rgb(255, 251, 0)
+        }
+        
+        .one {
+            color: rgb(192, 39, 39);
+            text-align: center;
+            font-family: cursive;
+            font-size: 40px;
+        }
+        
+        .ten {
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: dodgerblue;
+        }
+        
+        .two {
+            color: rgb(192, 39, 39);
+            text-align: center;
+            font-family: cursive;
+            font-size: 40px;
+        }
+        
+        .three {
+            color: rgb(62, 199, 11);
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        
+        .lang {
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: darkblue;
+        }
+        
+        .hobb {
+            font-size: 20px;
+            font-family: monospace;
+            color: orange
+        }
+        
+        .name {
+            font-size: 40px;
+            color: rgb(255, 211, 45);
+            font-family: 'Sacramento', cursive;
+            text-align: center;
+        }
+        
+        .six {
+            font-size: 30px;
+            font-family: 'Anton', sans-serif;
+            text-align: center;
+            color: burlywood
+        }
+        
+        .edu {
+            font-size: 40px;
+            font-family: cursive;
+            color: rgb(50, 62, 221);
+            text-align: center;
+        }
+        
+        .seven {
+            font-size: 22px;
+            font-family: monospace;
+            color: cyan;
+        }
+        
+        .eight {
+            text-align: center;
+            font-size: 17px;
+            color: greenyellow;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+        
+        .exp {
+            font-size: 40px;
+            color: rgb(255, 211, 45);
+            font-family: cursive;
+            text-align: center;
+        }
+        
+        .nine {
+            font-size: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        
+        .may {
+            text-align: center;
+            color: lime;
+            font-size: 20px;
+        }
+        
+        .stall {
+            text-align: center;
+            font-size: 19px;
+            color: darkblue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .zero {
+            text-align: center;
+            color: mediumspringgreen;
+            font-size: 40px;
+        }
+        
+        .btn {
+            background: #11cdd4;
+            background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+            background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+            background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+            background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+            background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+            -webkit-border-radius: 10;
+            -moz-border-radius: 10;
+            border-radius: 20px;
+            font-family: monospace;
+            color: #ffffff;
+            font-size: 20px;
+            padding: 10px 20px 10px 20px;
+            text-decoration: none;
+            width: 20%;
+        }
+        
+        .btn:hover {
+            background: #30e3cb;
+            background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+            background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+            background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+            background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+            background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+            text-decoration: none;
+        }
+    </style>
+    <div class="full">
+        <div class="left">
+            <div class="image">
+                <img src="css/pahadi02.jpeg" alt="Vivek Chauhan" style="width:180px;height:180px;border-radius: 50%; text-align: center;">
+            </div>
+            <div class="Contact">
+                <h2 class="one">Contact</h2>
+
+
+
+                <p><b class="ten">Email id:</b> vivekchauhan0395@gmail.com</p>
+
+
+                <p><b class="ten">Mobile no :</b> 8219168507</p>
+
+
+            </div>
+            <hr class="border">
+
+            <div class="Skills">
+                <h2>Skills</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <table cellspacing="10">
+                                <thead>
+                                    <tr>
+                                        <td class="three">C++</td>
+                                        <td> ⭐⭐⭐⭐</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="three">JAVA</td>
+                                        <td> ⭐⭐</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="three">Python</td>
+                                        <td> ⭐⭐</td>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </td>
+
+
+                        <td>
+                            <table cellspacing="10">
+                                <thead>
+                                    <tr>
+                                        <td class="three">HTML</td>
+                                        <td> ⭐⭐⭐⭐</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="three">CSS</td>
+                                        <td> ⭐⭐⭐⭐</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="three">Javascript</td>
+                                        <td> ⭐⭐</td>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <hr class="border">
+            </div>
+
+
+
+
+
+
+            <div class="Language">
+                <h2 class="one">Language</h2>
+                <ul class="lang">
+                    <li>English</li>
+                    <li>Hindi</li>
+                </ul>
+            </div>
+            <hr class="border">
+            <div class="Hobbies">
+                <h2 class="one">Hobbies</h2>
+                <ul class="hobb">
+                    <li>Playing Chess</li>
+                    <li>Reading New Books</li>
+                    <li>Learning about the new technologies</li>
+                    <li>Watching Anime</li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div class="name">
+                <h1>Vivek Chauhan</h1>
+
+            </div>
+            <div class="title">
+                <p class="six">I'm a Web Developer</p>
+            </div>
+            <hr class=line>
+            <div class="Education">
+                <h2 class="edu">Education</h2>
+                <table cellspacing="10">
+                    <thead>
+                        <tr class="seven">
+                            <th>School/College</th>
+                            <th>Qualifications</th>
+                            <th>Passing Year</th>
+                            <th>Percentage/SGPA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <thead class="eight">
+                            <tr>
+                                <td>Rampur Public School</td>
+                                <td>10th</td>
+                                <td>2017-2018</td>
+                                <td>87.7</td>
+
+                            </tr>
+
+                            <tr>
+                                <td>RRKM Govt.Sr.Sec.School</td>
+                                <td>12th</td>
+                                <td>2019-2020</td>
+                                <td>88.8</td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Dronacharya College Of Engineering</td>
+                                <td>1st Semester</td>
+                                <td>2021-2022</td>
+                                <td>8.27</td>
+                            </tr>
+                        </thead>
+                    </tbody>
+                </table>
+            </div>
+            <hr class="line">
+            <div class="Experience">
+                <h2 class="exp">Experience</h2>
+                <h3 class="nine">I am volunteer of GFG Dronacharya </h3>
+
+
+                <p class="may"><em><u>26th May- 28th May</u></em></p>
+
+                <ul class="stall">
+                    <p>🔅I work as a stall in charge. I also work in marketing department.</p>
+                </ul>
+
+            </div>
+            <hr class="line">
+
+            <div class="Interests">
+                <h2 class="zero">Interests</h2>
+                <h3>
+                    <table cellspacing="20">
+                        <thead>
+                            <tr class="btn">
+                                <th>
+                                    Google CEO
+                                </th>
+                                <th>
+                                    Web 3
+                                </th>
+                                <th>
+                                    Metaverse
+                                </th>
+                                <th>
+                                    Microsoft
+                                </th>
+                                <th>
+                                    Elon Musk
+                                </th>
+                                <th>
+                                    Bitcoin
+                                </th>
+                            </tr>
+                        </thead>
+                    </table>
+                </h3>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
